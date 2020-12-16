@@ -1,0 +1,30 @@
+### register
+POST http://localhost:3000/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "john@example.com",
+    "password": "123456",
+    "type" : "user"
+}
+
+
+###
+POST http://localhost:3000/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email" : "john@example.com",
+    "password": "123456"
+}
+
+
+###
+POST http://localhost:3000/api/auth/refresh HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYXBvbjRAdGVzdC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRhaXUvNGlGTzRORjFYVXV5QnZhcVFlYzNDRmVVcDRvU01BU0cvY3RyQjBWc2pyWGVsaU9JNiIsInR5cGUiOiJ2ZW5kb3IiLCJpYXQiOjE2MDgwNjIzODIsImV4cCI6MTYxMDY1NDM4Mn0.S-04k-RRsf0n5-2Y7gTIvF84EfW5CWZyjnx5mwDeLw0
+
+###
+POST http://localhost:3000/api/auth/logout HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYXBvbjNAdGVzdC5jb20iLCJ0eXBlIjoidmVuZG9yIiwiaWF0IjoxNjA4MDYzMTI3LCJleHAiOjE2MDgwNjU4Mjd9.T71CxeWf_B6SKVikjxDIgSXDEiVyCTbKtMxHW8qQ6d4
