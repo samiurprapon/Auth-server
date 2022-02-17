@@ -10,7 +10,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "eslint": "^8.9.0",
-    "nodemon": "2.0.6"
+    "nodemon": "2.0.15"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
